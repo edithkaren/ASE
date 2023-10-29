@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  
+  <body>
+<form id="survey-form">
+  <header> 
+    <h1>Customer Survey Form</h1>
+  </header>
+  <fieldset class="fieldset">
+
+    <div class="sub-group">
+      <label class="left" id="name-label" for="Firstame">First Name:</label>
+    <input type="text" name="customer-name" class="right input-field" id="firstName" placeholder="Enter your First name" required>
+    </div>
+    <div class="sub-group">
+      <label class="left" id="name-label" for="last name">Last Name:</label>
+    <input type="text" name="customer-name" class="right input-field" id="lastName" placeholder="Enter your Last name" required>
+    </div>
+    <div class="sub-group">
+      <label class="left" id="date" for="Dob">Dob:</label>
+    <input type="date" name="dob" class="right input-field" id="dob" placeholder="Enter your Dob" required>
+    </div>
+    <div class="sub-group">
+      <label class="left" >Country:</label>
+    <input type="dropdown"  required>
+    <select name="country" id="country" class="right input-field " required>
+      <option>Select a country</option>
+      <option>India</option>
+      <option>USA</option>
+      <option>UK</option>
+      <option>Britain</option>
+      <option>Austraia</option>
+      <option>New Zealand</option>
+      <option>South Africa</option>
+      <option>Canada</option>
+      <option>Nepal</option>
+      <option>SriLanka</option>
+      <option>Japan</option>
+      <option>Russia</option>
+    </select>
+    </div>
+    <div class="sub-group">
+      <label class="left" id="date" for="Gender" required>Gender:</label>
+    <input type="checkbox" name="Gender" class="left  " id="male" > <label for="male">Male </label>     
+    <input type="checkbox" name="Gender" class="left  " id="female" > <label for="female">Female </label>  
+    <input type="checkbox" name="Gender" class="left  " id="other" > <label for="other">other </label>  
+    </div>
+    
+    <div class="sub-group">
+      <label for="profession" class="left" id="profession">Profession:</label>
+      <input type="text" id="profession" class="right input-field" placeholder="Profession" name="profession" required>
+    </div>
+
+    <div class="sub-group">
+      <label class="left" id="email-label" for="email">*Email:</label>
+    <input type="email" name="Email-address" class="right input-field" placeholder="Enter your email" id="email" required>
+    </div>
+
+    <div class="sub-group">
+      <label for="mobileNumber" class="left" id="mobileNumber">Mobile Number:</label>
+      <input type="text" id="mobileNumber" class="right input-field" placeholder="mobileNumber" name="mobileNumber" required>
+    </div>
+   
+
+
+     <fieldset class="fieldset">
+   <h2>Do you have any comment or suggestion?</h2>
+
+    <div class="commentbox">
+
+   <textarea rows="7"  placeholder="Enter your comment here..."></textarea>
+
+       </div>
+      </fieldset>
+      <button id="submit" type="submit" onclick="submitForm()">Submit</button>
+      <button id="reset" type="reset" onclick="resetForm()">Reset </button>
+</form>
+
+<div class="popup" id="popup">
+  <span class="close" onclick="closePopup()">&times;</span>
+  <h2>Thank You!</h2>
+  <p>Your feedback has been submitted successfully.</p>
+</div>
+
+<div class="overlay" id="overlay"></div>
+  </body>
+ <script type="javascript" src="G:\Internship\assignment\html\Survey\survey.js"> </script>
+</html>
